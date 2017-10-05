@@ -20,3 +20,7 @@ for line in inputFile:
 		outputFile.write(ip+'\n') #Change \n here with \r\n for Windows
 	else:
 		pass
+	
+# close opened files
+inputFile.close()
+outputFile.close()
