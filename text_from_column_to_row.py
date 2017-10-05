@@ -18,3 +18,7 @@ for line in inputFile:
 	#outputFile.write(line.replace("\r\n", replacer)) #for network and servers
 	#temp2 = tempLine.replace("\r", replacer)
 	outputFile.write(line.replace("\n", replacer)) #for main purpose
+	
+# close opened files
+inputFile.close()
+outputFile.close()
