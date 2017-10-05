@@ -18,3 +18,7 @@ for line in inputFile:
 	#temp2 = tempLine.replace("\r", ", ")
 	#outputFile.write(line.replace("\n", " ")) #for main purpose
 	outputFile.write(line.replace("\n", "\r\n"))
+	
+# close opened files
+inputFile.close()
+outputFile.close()
