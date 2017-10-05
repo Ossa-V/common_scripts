@@ -36,3 +36,8 @@ for inputItem in input:
 		pass
 
 print("In output file {} objects".format(counter))
+
+# close opened files
+inputFile.close()
+comparingFile.close()
+outputFile.close()
