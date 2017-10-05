@@ -15,3 +15,7 @@ for line in inputFile:
 		pass
 	else:
 		outputFile.write(line)
+		
+# close opened files
+inputFile.close()
+outputFile.close()
