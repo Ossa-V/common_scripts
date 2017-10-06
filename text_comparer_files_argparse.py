@@ -60,5 +60,6 @@ else:
 
     if (args.silent == False):
         print("[*]\tIn output file {} objects".format(counter))
-
-    outputFile.close()
+        
+    if (args.output != None):
+        outputFile.close()
