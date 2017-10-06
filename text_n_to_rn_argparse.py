@@ -12,11 +12,10 @@ args = parser.parse_args()
 inputFile = open(args.input)
 outputFile = open(args.output, 'w')
 if args.mode == 1:
-	for line in inputFile:
+	for line in inputFile: # Maybe you should use .read().replace("\r\n","\n"), but in this case buffer overflow can happen
 		outputFile.write(line.replace("\r\n", "\n"))
 elif args.mode == 2:
-	for line in inputFile:
-
+	for line in inputFile: # Maybe you should use .read().replace("\n","\r\n"), but in this case buffer overflow can happen
 		outputFile.write(line.replace("\n", "\r\n"))
 else:
 	print ("Bad mode (1 or 2). Exiting...")
