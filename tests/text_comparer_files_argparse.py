@@ -49,6 +49,7 @@ else:
             if (args.output != None): #if item not in compare we write it to the output
         #print("Output: {}".format(inputItem)) Debug
                 outputFile.write(inputItem + "\n") #Add Exception if we couldn't open file
+                counter += 1
             else:
                 print(inputItem)
         else:
