@@ -10,17 +10,26 @@ parser.add_argument("-o", "--output", type=str, help="Write to file (if not spec
 args = parser.parse_args()
 
 inputFile = open(args.input)
-
 if (args.output != None):
 	outputFile = open(args.output, 'w')
+else:
+	exit_line = ""
 
 for line in inputFile:
-	if (len(line) < 2):
+	if (len(line) < 3): #to avoid \r\n
 		pass
 	else:
-		outputFile.write(line)
+		if (args.output == None):
+			#print(line)
+			exit_line += line #+ "\r\n"
+		else:
+			outputFile.write(line)
+
+if (args.output == None):
+	print (exit_line)
 
 #close files
 inputFile.close()
+
 if (args.output != None):
 	outputFile.close()
