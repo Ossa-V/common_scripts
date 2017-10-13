@@ -4,8 +4,7 @@ import argparse
 '''
 The script deletes the data in the first file that are found in the second file.
 Is able to work with data in a column and in a string (must be separated by a space).
-Prints the data in a column
-To Do: Add work without outputfile (output into console via print() )
+Prints the data in a column (file or in console (if file not defined))
 '''
 
 # Scripts removes entries in inputfile which was found in correct file
