@@ -49,9 +49,10 @@ def parseme(inputFileAddr, outputFileAddr):
 	dirs = ""
 	files = ""
 	for line in inputFile:
-		if line[0:12] == "==> DIRECTORY":
+		print ("line[0:13]: \"{}\" line[0:2]: \"{}\". RESULT: line[0:13] == \"==> DIRECTORY\" is {} and \"line[0:2] == \"+ \" is {}".format(line[0:13], line[0:2], line[0:13] == "==> DIRECTORY", line[0:2] == "+ "))
+		if line[0:13] == "==> DIRECTORY":
 			dirs = dirs + line[15:] # every else after "==> DIRECTORY: "(link)+\r\n
-		elif line[0:1] == "+ ":
+		elif line[0:2] == "+ ":
 			files = files + line[2:] # including CODE and SIZE
 
 	#output
