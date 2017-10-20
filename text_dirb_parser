@@ -6,7 +6,7 @@
 # Everything else is trash and should be ignored?
 # Also we can ignore custom 404 answer if we gonna look at the size 
 '''
-sample output:
+sample input:
 ---- Scanning URL: http://192.168.31.150/ ----
 ==> DIRECTORY: http://192.168.31.150/bitrix/
 ==> DIRECTORY: http://192.168.31.150/company/
