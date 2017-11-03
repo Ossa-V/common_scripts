@@ -6,4 +6,5 @@ format_scripts/ - Usefull format scripts with argparse, so u can use with multi 
 - text_remove_duplicates_domains.py - Removes duplicates in uppercase in the word list, converts all text to lowercase. Useful for working with domain lists. The order of the output does not match the input data (function set() is used)
 
 init_system/  - initial scripts for OS (Unix-based)
+
 socket/ - python sockets (basic scripts, only server and client - nothing interesting)
